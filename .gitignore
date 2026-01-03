@@ -1,0 +1,10 @@
+# Plugin manager data (downloaded plugins)
+lazy/
+
+# lazy.nvim lockfile
+lazy-lock.json
+
+# Neovim runtime files
+.cache/
+.log/
+shada/
