@@ -5,7 +5,7 @@ vim.cmd("syntax reset")
 vim.g.colors_name = "navy"
 
 local c = {
-  bg = "#101331",
+  bg = "#0a1026",
   fg = "#f8f8f2",
   black = "#1e2030",
   red = "#ff757f",
