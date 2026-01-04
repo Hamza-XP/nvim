@@ -1,3 +1,4 @@
+-- Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("config") .. "/lazy/lazy.nvim"
 
 if not vim.loop.fs_stat(lazypath) then
@@ -12,18 +13,30 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
-
-vim.opt.rtp:prepend(vim.fn.stdpath("config") .. "/lazy/lazy.nvim")
-
+-- Plugins
 require("lazy").setup({
 
+  -- Icons (shared dependency)
   { "nvim-tree/nvim-web-devicons", lazy = true },
 
+  -- Statusline
   {
     "nvim-lualine/lualine.nvim",
     config = function()
       require("lualine").setup()
-    end
+    end,
+  },
+
+  -- File explorer (VS Code–like)
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    branch = "v3.x",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-tree/nvim-web-devicons",
+      "MunifTanjim/nui.nvim",
+    },
   },
 
 })
+
