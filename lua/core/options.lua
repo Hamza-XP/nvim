@@ -6,5 +6,6 @@ vim.opt.tabstop = 2
 vim.opt.smartindent = true
 vim.opt.mouse = "a"
 vim.opt.termguicolors = true
+vim.opt.clipboard = "unnamedplus"
 
 vim.g.mapleader = " "
