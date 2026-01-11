@@ -1,0 +1,27 @@
+#format = "$username[@](#86e1fc)$directory$character"
+format = "$username$directory$character"
+add_newline = false
+
+[username]
+show_always = true
+style_user = "bold #ff7f8b"
+format = "[$user]($style)"
+
+# Color for @ and ~
+#[custom.at]
+#when = "true"
+#command = "echo @"
+#style = "#86e1fc"
+#format = "[$output]($style)"
+
+# Directory
+[directory]
+style = "#86e1fc"
+format = "[$path]($style)"
+#truncation_length = 1
+truncation_symbol = "~"
+
+# Prompt Symbol
+[character]
+success_symbol = "[❯](#ffc777)"
+error_symbol = "[❯](red)"
