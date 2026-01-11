@@ -1,0 +1,39 @@
+# ~/.config/alacritty/alacritty.yml
+
+window:
+  title: "Terminal"
+  dimensions:
+    columns: 80
+    lines: 25
+  decorations: full
+
+
+font:
+  normal:
+    family: "DejaVu Sans Mono"
+  size: 9.0
+
+colors:
+  primary:
+    background: '#101331'     # very dark navy blue
+    foreground: '#f8f8f2'   # near-white (main text)
+
+  normal:
+    black:   '#1e2030'
+    red:     '#ff757f'
+    green:   '#c3e88d'
+    yellow:  '#ffc777'
+    blue:    '#82aaff'
+    magenta: '#c099ff'
+    cyan:    '#86e1fc'
+    white:   '#c8d3f5'
+
+  bright:
+    black:   '#444a73'
+    red:     '#ff757f'
+    green:   '#c3e88d'
+    yellow:  '#ffc777'
+    blue:    '#82aaff'
+    magenta: '#c099ff'
+    cyan:    '#86e1fc'
+    white:   '#c8d3f5'
